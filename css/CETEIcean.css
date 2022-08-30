@@ -1805,10 +1805,6 @@ tei-zone {
   /* Empty Rule Set */
 }
 
-mei-title {
-  
-}
-
 mei-title[type="subordinate"] {
   font-size: 18pt;
   font-variant-caps: small-caps;
@@ -1830,6 +1826,7 @@ mei-filedesc > mei-titlestmt> mei-respstmt > mei-persname[role="composer"]::befo
   font-weight: bold;
   content: "Composer: ";
   white-space: pre;
+  margin-top: 2em;
 }
 
 mei-filedesc > mei-titlestmt> mei-respstmt > mei-persname[role="encoder"]::before {
@@ -1839,7 +1836,7 @@ mei-filedesc > mei-titlestmt> mei-respstmt > mei-persname[role="encoder"]::befor
 }
 
 #pers12345 {
-  margin-top: 2em;
+
 }
 
 mei-filedesc > mei-pubstmt > mei-respstmt {
