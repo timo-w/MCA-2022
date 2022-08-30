@@ -1806,7 +1806,7 @@ tei-zone {
 }
 
 mei-title {
-  font-size: 24pt;
+  
 }
 
 mei-title[type="subordinate"] {
@@ -1818,6 +1818,7 @@ mei-title[type="subordinate"] {
 mei-filedesc > mei-titlestmt > mei-title {
   color: #595b66;
   display: block;
+  font-size: 24pt;
 }
 
 mei-filedesc > mei-titlestmt > mei-respstmt {
