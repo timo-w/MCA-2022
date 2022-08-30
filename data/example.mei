@@ -9,7 +9,7 @@
          <titleStmt>
             <title xml:id="title12345">Etude in F Minor</title>
             <title type="subordinate">op. 10, no. 9</title>
-            <title type="subordinate">an electronic transcriptions</title>
+            <title type="subordinate">an electronic transcription</title>
             <respStmt>
                <persName xml:id="pers12345" role="composer" authURI="http://viaf.org/viaf/44499359" authority="VIAF">Frédéric Chopin</persName>
                <persName role="encoder">Maja Hartwig</persName>
