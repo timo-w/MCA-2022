@@ -1835,10 +1835,6 @@ mei-filedesc > mei-titlestmt> mei-respstmt > mei-persname[role="encoder"]::befor
   white-space: pre;
 }
 
-#pers12345 {
-
-}
-
 mei-filedesc > mei-pubstmt > mei-respstmt {
   display: none;
 }
