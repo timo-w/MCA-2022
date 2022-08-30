@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Music Encoding Project</title>
+    <meta charset="utf-8">
+    <meta name="description" content="My project">
+    <meta name="author" content="Me">
+    <link rel="stylesheet" href="css/style.css" media="all" />
+    <script src="js/utils.js"></script>
+  </head>
+  <body>
+    <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+    <div id="player"></div>
+
+    <div id="app">Verovio is loading...</div>
+    <script type="module">
+        import 'https://www.verovio.org/javascript/app/verovio-app.js';
+
+        const options = {
+            defaultView: 'responsive', // default is 'responsive', alternative is 'document'
+            defaultZoom: 3, // 0-7, default is 4
+            enableResponsive: true, // default is true
+            enableDocument: true // default is true
+        }
+
+        // A MusicXML file
+        var file = 'data/example.mei';
+        // A MEI file
+        //var file = 'https://www.verovio.org/editor/brahms.mei';
+
+        const app = new Verovio.App(document.getElementById("app"), options);
+        fetch(file)
+            .then(function(response) {
+                return response.text();
+            })
+            .then(function(text) {
+                app.loadData(text);
+            });
+    </script>
+
+    <script src="js/youtube.js"></script>
+  </body>
+</html>
