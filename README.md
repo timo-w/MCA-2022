@@ -2,6 +2,8 @@
 
 ## Week 1 Lab
 
+### Lab Task
+
 > Identify a theme for your dataset. This will be the central, cohesive strand that will bring your data together. It can be an artist, composer, songwriter, performer, album, larger work (i.e. opera, musical, etc.), time period, genre, archival grouping, etc. You will want to be sure that you can gather all three types of data (musical scores, metadata, and audio recordings) based on your selected theme.
 
 The Theme:
@@ -10,6 +12,8 @@ The Theme:
 > Based on your own experience, what do you think are some challenges to working with music and music-related data (perhaps related to access, curation, distribution, etc.)?
 
 > How does your selected theme display some of these challenges? Describe the current manifestations of data relating to your selected theme, discussing how it is presently curated (collected and gathered) and how it is presented, described, and analysed.
+
+### Challenges & their relation to the chosen theme
 
 Issues with sharing digital sheet music:
 - Digital sheet music data has many different standards (e.g. Midi, MusicXML, proprietary file types like Sibelius’s *.sib* or Musescore’s *.mscz*.
@@ -29,3 +33,38 @@ Issues with curation:
 - Organising music data can be challenging due to the lack of a uniform standard for sharing music - e.g. digital recordings can have varying compression, bit rate, file format, etc. which can make it difficult to objectively analyse, compare, and organise such files.
 - Metadata for these files can have differences - some may have more descriptions than others, some may have different standards for labelling specific data (for example, “number of movements” could be labelled as *3* or *Three* or *III* within the metadata of a file).
 - **The Planets:** Metadata for the suite can have great variation depending on the source - orchestral pieces of music generally offer a large amount of creative freedom to the conductor/performers of a performance and properties such as tempo & dynamics can be largely up to interpretation. This results in fluctuations in metadata for the same piece - which can make it challenging to determine or analyse the piece.
+
+
+## Week 2 Lab
+
+## Lab Task
+
+Converting PDF to Digital Score:
+- Chose Beethoven String Quartet No. 4 in C minor (Op. 18 No. 4)
+
+### Some of the changes needed
+
+Missing score information:
+- *Original score*
+- ![Original score](week-2/documentation/original-text.png)
+- *Converted score*
+- ![Converted score](week-2/documentation/converted-text.png)
+
+Incorrect Instrumentation
+- *Original score*
+- ![Original score](week-2/documentation/original-instrumentation.png)
+- *Converted score*
+- ![Converted score](week-2/documentation/converted-instrumentation.png)
+
+Missing Ornaments:
+- *Original score*
+- ![Original score](week-2/documentation/original-ornament.png)
+- *Converted score*
+- ![Converted score](week-2/documentation/converted-ornament.png)
+
+### Other errors in the converted score
+
+- Missing slurs
+- Missing dynamic markings
+- Missing articulation markings
+- Incorrect tempo marking
