@@ -17,14 +17,81 @@
         height: auto;
         width: 100%;
         position: absolute;
-        top: 80px;
+        top: 200px;
         bottom: 0;
     }
     </style>
 </head>
 <body>
-    <div class="header"><h1>Week 3</h1>
-        <p>[Insert your response to task 2 here.]</p></div>
+  
+    <!-- Start of week 3 task -->
+    <div class="header">
+
+      <h1>Week 3</h1>
+
+        <p>Where MusicXML and MEI share many differences, such as both being written in the XML format, the two formats differ as they were designed and built upon different primary purposes. Where MusicXML exists as an interchange between different proprietary notation software formats, focussing on western notational accuracy, MEI emphasises human readability through its structure, and extensive coverage of content outside of notation alone.</p>
+        <p>The differing philosophies of the formats can be exemplified by the differences in their file structure.</p>
+
+        <h2>Note Elements</h2>
+        <ul>
+          <li>
+            MusicXML structures notes as parent elements containing properties within nested child elements.
+            <ul>
+              <li>e.g. elements like &lt;pitch&gt;, &lt;duration&gt; and &lt;type&gt; can be found inside the parent &lt;note&gt; element.</li>
+              <li>Child elements of &lt;note&gt; also can have properties within them, for example the &lt;pitch&gt; element nests elements &lt;step&gt; and &lt;octave&gt;, defining the pitch.</li>
+              <li>In this format, &lt;note&gt; elements generally consist of several lines, structured in a way which is clear for a computer to read and render.</li>
+            </ul>
+          </li>
+          <li>
+            MEI notes are generally single, self-closing tags, with properties within attributes inside the tag itself.
+            <ul>
+              <li>Instead of nesting a &ltpitch&gt; element, MEI notes contain attributes such as “oct” or “pname” which define the pitch of the &ltnote&gt; tag.</li>
+              <li>Other properties like stem direction or duration are also included as attributes (stem.dir and dur/dur.ppq respectively).</li>
+              <li>In this format, &ltnote&gt; elements generally use a single line, making it more intuitive to read, as well as to write manually.</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h2>Time Signature</h2>
+        <ul>
+          <li>
+            In MusicXML, time signatures are represented by a &lt;time&gt; element.
+            <ul>
+              <li>Within this element are nested elements which define the beat type and number of beats in their respective &lt;beats&gt; and &lt;beat-type&gt; elements.</li>
+            </ul>
+          </li>
+          <li>
+            In MEI, the same time signature is defined in the self-enclosing &lt;metreSig&gt; element.
+            <ul>
+              <li>Similar to &lt;note&gt; tags, instead of assigning properties within children like in MusicXML, attributes are written in the tag itself.</li>
+              <li>The attributes “count” and “unit” define the number of beats and beat-type.</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h2>Parts List</h2>
+        <ul>
+          <li>
+            In MusicXML, the parts list is defined within the &lt;part-list&gt; element.
+            <ul>
+              <li>Each part is contained in a &lt;score-part&gt; element, and includes child elements such as &lt;part-name&gt; and &lt;part-abbreviation&gt; for the part name and its associated abbreviation.</li>
+              <li>Since MusicXML is designed for the exchange of digital music notation, it includes midi data for the use of playback, which is a feature of many notation softwares.</li>
+              <li>The element &lt;midi-instrument&gt; contains nested elements like &lt;midi-channel&gt;, &lt;volume&gt;, and &lt;pan&gt;. This information is useful when exchanging and converting the file to other notation softwares, as the specific software is able to interpret this information and set the instrument’s midi data (instrument name, volume, pan, etc.) accordingly.</li>
+            </ul>
+          </li>
+          <li>
+            In MEI, the parts list is found in the &lt;staffGrp&gt; element.
+            <ul>
+              <li>Parts are similarly defined in &lt;staffDef&gt; elements.</li>
+              <li>Each &lt;staffDef&gt; element includes child elements such as &lt;label&gt; and &lt;labelAbbr&gt; for the part name and its abbreviation.</li>
+              <li>Although there is midi data in this format as well, there is less emphasis on it, instead more detail is given to the attributes of the part, including time and key signatures as well as which clef is used for the part.</li>
+            </ul>
+          </li>
+        </ul>
+
+      </div>
+      <!-- End of week 3 task -->
+
     <div id="app">Verovio is loading...</div>
     <script type="module">
         import 'https://www.verovio.org/javascript/app/verovio-app.js';
