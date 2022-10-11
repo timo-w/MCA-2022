@@ -16,8 +16,8 @@
     #app {
         height: auto;
         width: 100%;
-        position: relative;
-        top: 200px;
+        position: absolute;
+        top: 1000px;
         bottom: 0;
     }
     </style>
@@ -32,7 +32,10 @@
         <p>Where MusicXML and MEI share many differences, such as both being written in the XML format, the two formats differ as they were designed and built upon different primary purposes. Where MusicXML exists as an interchange between different proprietary notation software formats, focussing on western notational accuracy, MEI emphasises human readability through its structure, and extensive coverage of content outside of notation alone.</p>
         <p>The differing philosophies of the formats can be exemplified by the differences in their file structure.</p>
 
-        <h2>Note Elements</h2>
+        <hr>
+        <h2>Differences between MusicXML and MEI</h2>
+
+        <h3>Note Elements</h3>
         <ul>
           <li>
             MusicXML structures notes as parent elements containing properties within nested child elements.
@@ -52,7 +55,7 @@
           </li>
         </ul>
 
-        <h2>Time Signature</h2>
+        <h3>Time Signature</h3>
         <ul>
           <li>
             In MusicXML, time signatures are represented by a &lt;time&gt; element.
@@ -69,7 +72,7 @@
           </li>
         </ul>
 
-        <h2>Parts List</h2>
+        <h3>Parts List</h3>
         <ul>
           <li>
             In MusicXML, the parts list is defined within the &lt;part-list&gt; element.
@@ -88,6 +91,8 @@
             </ul>
           </li>
         </ul>
+
+        <hr>
 
       </div>
       <!-- End of week 3 task -->
