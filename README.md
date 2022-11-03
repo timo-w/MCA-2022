@@ -68,3 +68,18 @@ Missing Ornaments:
 - Missing dynamic markings
 - Missing articulation markings
 - Incorrect tempo marking
+
+
+## Week 4 Lab
+
+## Lab Task
+
+> Generate a jSymbolic analysis of your piece. Be sure to export your piece as a MIDI file before trying to run jSymbolic, and select a group of features that you think is most interesting and relevant to your particular piece.
+
+> Use the Python notebook on the Moodle to generate a piano roll and pitch histogram of your piece using music21.
+
+Piano Roll:
+- ![Piano roll of pitches](week-4/documentation/piano_roll.png)
+
+Pitch Histogram:
+- ![Pitch Histogram](week-4/documentation/histogram.png)
