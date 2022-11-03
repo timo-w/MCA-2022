@@ -3,6 +3,8 @@
 <?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
    <meiHead>
+
+     <!-- File Description -->
       <fileDesc>
          <titleStmt>
             <title>Cuarteto en Do menor</title>
@@ -10,11 +12,30 @@
             <respStmt>
                <persName role="composer" authURI="http://viaf.org/viaf/32182557" authority="VIAF">Ludwig van Beethoven</persName>
                <persName role="encoder">Timothy Wang</persName>
+               <persName role="transcriber">Gory (info@gory.jazztel.es)</persName>
             </respStmt>
          </titleStmt>
          <pubStmt><date isodate="2022-10-06" type="encoding-date">2022-10-06</date>
          </pubStmt>
       </fileDesc>
+
+      <!-- File Description -->
+      <sourceDesc>
+        <source>
+          <identifier type="URI">https://imslp.org/wiki/Special:ReverseLookup/21518</identifier>
+          <identifier type="referenceNumber">Op. 18 No. 4</identifier>
+          <titleStmt>
+            <title>Cuarteto en Do menor</title>
+            <title type="uniform">Op. 18 No. 4</title>
+            <respStmt>
+               <persName role="composer" authURI="http://viaf.org/viaf/32182557" authority="VIAF">Ludwig van Beethoven</persName>
+               <persName role="encoder">Timothy Wang</persName>
+               <persName role="transcriber">Gory (info@gory.jazztel.es)</persName>
+            </respStmt>
+          </titleStmt>
+        </source>
+      </sourceDesc>
+
       <encodingDesc xml:id="encodingdesc-1drf3ko">
          <appInfo xml:id="appinfo-1b281j">
             <application xml:id="application-mf4kdg" isodate="2022-10-06T13:15:53" version="3.13.0-dev-9f8f833">

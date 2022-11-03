@@ -1835,6 +1835,12 @@ mei-filedesc > mei-titlestmt> mei-respstmt > mei-persname[role="encoder"]::befor
   white-space: pre;
 }
 
+mei-filedesc > mei-titlestmt> mei-respstmt > mei-persname[role="transcriber"]::before {
+  font-weight: bold;
+  content: '\a'"Transcription by: ";
+  white-space: pre;
+}
+
 mei-filedesc > mei-pubstmt > mei-respstmt {
   display: none;
 }
