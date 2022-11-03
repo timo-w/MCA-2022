@@ -6,7 +6,10 @@
       <fileDesc>
          <titleStmt>
             <title>Cuarteto, Op. 18 No. 4</title>
-            <respStmt />
+            <composer>Ludwig van Beethoven</composer>
+            <respStmt>
+              <persName></persName>
+            </respStmt>
          </titleStmt>
          <pubStmt><date isodate="2022-10-06" type="encoding-date">2022-10-06</date>
          </pubStmt>
