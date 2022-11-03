@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<!DOCTYPE feature_vector_file [
+   <!ELEMENT feature_vector_file (comments, data_set+)>
+   <!ELEMENT comments (#PCDATA)>
+   <!ELEMENT data_set (data_set_id, section*, feature*)>
+   <!ELEMENT data_set_id (#PCDATA)>
+   <!ELEMENT section (feature+)>
+   <!ATTLIST section start CDATA ""
+                     stop CDATA "">
+   <!ELEMENT feature (name, v+)>
+   <!ELEMENT name (#PCDATA)>
+   <!ELEMENT v (#PCDATA)>
+]>
+
+<feature_vector_file>
+
+   <comments></comments>
+
+	<data_set>
+		<data_set_id>D:\Documents\4. University Stuff\Music\MCA\beethoven-quartet.mid</data_set_id>
+		<feature>
+			<name>Pitch Class Histogram</name>
+			<v>2.73E-1</v>
+			<v>2.874E-3</v>
+			<v>1.063E-1</v>
+			<v>1.092E-1</v>
+			<v>8.621E-3</v>
+			<v>1.063E-1</v>
+			<v>2.299E-2</v>
+			<v>2.098E-1</v>
+			<v>6.609E-2</v>
+			<v>1.149E-2</v>
+			<v>5.747E-3</v>
+			<v>7.759E-2</v>
+		</feature>
+		<feature>
+			<name>Number of Pitches</name>
+			<v>3.4E1</v>
+		</feature>
+		<feature>
+			<name>Number of Pitch Classes</name>
+			<v>1.2E1</v>
+		</feature>
+		<feature>
+			<name>Range</name>
+			<v>5.3E1</v>
+		</feature>
+		<feature>
+			<name>Strong Tonal Centres</name>
+			<v>2E0</v>
+		</feature>
+		<feature>
+			<name>Mean Pitch</name>
+			<v>5.988E1</v>
+		</feature>
+		<feature>
+			<name>Mean Pitch Class</name>
+			<v>4.259E0</v>
+		</feature>
+		<feature>
+			<name>Most Common Pitch</name>
+			<v>4.8E1</v>
+		</feature>
+		<feature>
+			<name>Most Common Pitch Class</name>
+			<v>0E0</v>
+		</feature>
+		<feature>
+			<name>Interval Between Most Prevalent Pitches</name>
+			<v>7E0</v>
+		</feature>
+		<feature>
+			<name>Pitch Variability</name>
+			<v>1.076E1</v>
+		</feature>
+		<feature>
+			<name>Most Common Melodic Interval</name>
+			<v>0E0</v>
+		</feature>
+	</data_set>
+
+</feature_vector_file>
