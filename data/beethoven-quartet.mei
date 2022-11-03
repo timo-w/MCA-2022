@@ -5,10 +5,11 @@
    <meiHead>
       <fileDesc>
          <titleStmt>
-            <title>Cuarteto, Op. 18 No. 4</title>
-            <composer>Ludwig van Beethoven</composer>
+            <title>Cuarteto</title>
+            <title type="subordinate">Op. 18 No. 4</title>
+            <title type="subordinate">en Do menor</title>
             <respStmt>
-              <persName></persName>
+               <persName role="composer" authURI="http://viaf.org/viaf/32182557" authority="VIAF">Ludwig van Beethoven</persName>
             </respStmt>
          </titleStmt>
          <pubStmt><date isodate="2022-10-06" type="encoding-date">2022-10-06</date>
