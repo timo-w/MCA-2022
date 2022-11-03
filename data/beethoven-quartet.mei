@@ -27,11 +27,6 @@
           <titleStmt>
             <title>Cuarteto en Do menor</title>
             <title type="uniform">Op. 18 No. 4</title>
-            <respStmt>
-               <persName role="composer" authURI="http://viaf.org/viaf/32182557" authority="VIAF">Ludwig van Beethoven</persName>
-               <persName role="encoder">Timothy Wang</persName>
-               <persName role="transcriber">Gory (info@gory.jazztel.es)</persName>
-            </respStmt>
           </titleStmt>
         </source>
       </sourceDesc>

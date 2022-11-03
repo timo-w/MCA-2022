@@ -1935,6 +1935,10 @@ mei-pubplace::before {
   white-space: pre;
 }
 
+mei-sourcedesc > mei-identifier[type="URI"] {
+  color: blue;
+}
+
 /*mei-filedesc > mei-sourcedesc > mei-source > mei-pubstmt::after {
   content: '\a'
   white-space: pre;
