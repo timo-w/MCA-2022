@@ -18,7 +18,7 @@
           enableDocument: true // default is true
       }
       // A MusicXML file
-      var file = 'data/beethoven-quartet.mei';
+      var file = 'week-7/beethoven-quartet-modified.mei';
       // A MEI file
       //var file = 'https://www.verovio.org/editor/brahms.mei';
       const app = new Verovio.App(document.getElementById("app"), options);
@@ -43,7 +43,7 @@
         mei: "http://www.music-encoding.org/ns/mei"
       }
     })
-    CETEI4MEI.getHTML5("data/beethoven-quartet.mei", function(data) {
+    CETEI4MEI.getHTML5("week-7/beethoven-quartet-modified.mei", function(data) {
       // get header
       var meiHead = data.querySelector('mei-meiHead')
       document.getElementById("MEImeta").appendChild(meiHead)
@@ -57,7 +57,7 @@
         scale: 50,
         adjustPageHeight: true
     })
-    fetch("data/beethoven-quartet.mei").then(function( response ) {
+    fetch("week-7/beethoven-quartet-modified.mei").then(function( response ) {
         response.text().then(function( data ) {
           var svg = vrvToolkit.renderData(data, {})
           document.getElementById('MEI').innerHTML = svg
